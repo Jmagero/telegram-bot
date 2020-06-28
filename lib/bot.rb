@@ -4,6 +4,7 @@ require_relative 'quote.rb'
 class Bot
   def initialize
     token = '833112055:AAGQxUtUr1zso5tHk3vKJcVCex3ViMLtNm0'
+  
   Telegram::Bot::Client.run(token) do |bot|
     bot.listen do |message|
       case message.text
@@ -20,3 +21,6 @@ class Bot
   end
 end
 end
+
+
+
