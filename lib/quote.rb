@@ -17,4 +17,8 @@ class Quote
     response = JSON.parse(response)
     response
   end
+  def select_random
+    @results = @results.sample
+    @results
+  end
 end
