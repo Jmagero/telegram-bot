@@ -1,12 +1,12 @@
 # telegram-bot
 
-> Creating a telegram programming inspirational bot that can be initialized to a specific user on their telegram account
+> Creating a telegram inspirational bot that can be initialized to a specific user on their telegram account
 
 ## Built With
 
 - Ruby,
 - Telegram Bot API
-- herokuapp quotes
+- Philosophy Quotes REST API v1.0
 
 ## How to Install
 - Install Ruby in your system. To install Ruby, you can read the https://www.ruby-lang.org/en/documentation/installation/
