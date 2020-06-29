@@ -15,7 +15,7 @@ class Quote
   end
 
   def make_request
-    url = 'https://programming-quotes-api.herokuapp.com/quotes'
+    url = 'https://philosophy-quotes-api.glitch.me/quotes'
     uri = URI(url)
     response = Net::HTTP.get(uri)
     response = JSON.parse(response)
