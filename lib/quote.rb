@@ -13,16 +13,12 @@ class Quote
   def select_random
     @results = @results.sample
   end
+
   def make_request
     url = 'https://programming-quotes-api.herokuapp.com/quotes'
     uri = URI(url)
     response = Net::HTTP.get(uri)
     response = JSON.parse(response)
     response
-  end
-
-  def select_random
-    @results = @results.sample
-    @results
   end
 end
