@@ -4,12 +4,15 @@ require 'json'
 require_relative 'bot.rb'
 
 class Quote
-  @results = nil
+  attr_reader :results
 
   def initialize
     @results = make_request
   end
 
+  def select_random
+    @results = @results.sample
+  end
   def make_request
     url = 'https://programming-quotes-api.herokuapp.com/quotes'
     uri = URI(url)
