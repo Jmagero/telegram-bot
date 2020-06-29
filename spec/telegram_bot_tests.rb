@@ -1,3 +1,4 @@
+require_relative '..lib/quote.rb'
 Rspec.describe Quote do
   describe 'make_request' do
     let(:request) {Quote.new}
