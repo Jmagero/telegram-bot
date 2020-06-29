@@ -1,6 +1,6 @@
-require_relative '..lib/quote.rb'
+require_relative '../lib/quote.rb'
 
-Rspec.describe Quote do
+describe Quote do
   describe 'make_request' do
     let(:request) { Quote.new }
     let(:request_json) { request.make_request }
@@ -19,7 +19,7 @@ Rspec.describe Quote do
     end
 
     it 'Should return a key and value' do
-      expect(request_random.length).to eql(2)
+      expect(request_random.length).to eql(4)
     end
   end
 end
