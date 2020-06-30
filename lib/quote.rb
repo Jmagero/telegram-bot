@@ -13,7 +13,9 @@ class Quote
   def select_random
     @results = @results.sample
   end
-
+  
+  private
+  
   def make_request
     url = 'https://philosophy-quotes-api.glitch.me/quotes'
     uri = URI(url)
