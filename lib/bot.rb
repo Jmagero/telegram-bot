@@ -1,4 +1,5 @@
 # rubocop:disable Layout/LineLength
+
 require 'telegram/bot'
 require 'dotenv'
 Dotenv.load('token.env')
@@ -20,8 +21,8 @@ class Bot
           new_result = result.select_random
           quote = new_result['quote']
           source = new_result['source']
-          bot.api.send_message(chat_id: message.chat.id, text: source.to_s, date: message.date)
-          bot.api.send_message(chat_id: message.chat.id, text: quote.to_s, date: message.date)
+          line = '\n'
+          bot.api.send_message(chat_id: message.chat.id, text: "#{source} \n #{quote}", date: message.date)
         end
       end
     end
