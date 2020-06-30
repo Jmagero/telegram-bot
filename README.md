@@ -13,6 +13,11 @@
 
 - git clone
 
+- For Windows users, open Command Prompt and run:
+
+  C: \>cd telegram-bot folder
+  C: \>cd telegram-bot folder> run ruby bin/main.rb
+
 - Navigate to your telegram account
 
 - On your telegram account search for:
@@ -28,7 +33,8 @@ gem install Rspec
 
 Navigate into the spec folder and run the following at the console:
 
-rspec telegram_bot_tests.rb
+rspec quote_spec.rb
+rspec bot_spec.rb
 
 ## Preview
 
