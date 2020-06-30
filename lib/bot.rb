@@ -1,10 +1,12 @@
 # rubocop:disable Layout/LineLength
 require 'telegram/bot'
+require 'dotenv'
+Dotenv.load('token.env')
 require_relative 'quote.rb'
 
 class Bot
   def initialize
-    token = '833112055:AAGQxUtUr1zso5tHk3vKJcVCex3ViMLtNm0'
+    token = ENV['TOKEN']
 
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
