@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby --enable-frozen-string-literal
 require_relative '../lib/bot.rb'
 require_relative '../lib/quote.rb'
 
