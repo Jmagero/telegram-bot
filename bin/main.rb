@@ -1,6 +1,8 @@
-#!/usr/bin/env ruby --enable-frozen-string-literal
 require_relative '../lib/bot.rb'
 require_relative '../lib/quote.rb'
+require 'dotenv'
+
+Dotenv.load('token.env')
 
 puts 'Helo!, Welcome to inspirational telegram bot'
 puts '--------------------------------------------'
